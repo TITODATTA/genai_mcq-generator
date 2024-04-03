@@ -38,7 +38,7 @@ quiz_generation_prompt = PromptTemplate(
     template=template
 )
 
-quiz_chain=LLMChain(llm=llm,prompt=quiz_generation_prompt,output_key="quiz",verbose=True)
+quiz_chain=LLMChain(llm=llm,prompts=quiz_generation_prompt,output_key="quiz",verbose=True)
 
 template2="""
 You are an expert english grammarian and writer. Given a Multiple Choice Quiz for {subject} students.\
@@ -54,7 +54,7 @@ Check from an expert English Writer of the above quiz:
 
 
 
-quiz_evaluation_prompt=PromptTemplate(input_variables=["subject", "quiz"], template=template2)
+quiz_evaluation_prompt=PromptTemplate(input_variables=["subject", "quiz"], template=template)
 
 review_chain=LLMChain(llm=llm, prompt=quiz_evaluation_prompt, output_key="review", verbose=True)
 
