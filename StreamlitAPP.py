@@ -13,7 +13,7 @@ from src.mcqgenerator.logger import logging
 
 
 #loading json file
-with open('C:/Users/sodatta/OneDrive - ALLEGIS GROUP/genai_mcq-generator/Response.json','r') as file:
+with open('./Response.json','r') as file:
     RESPONSE_JSON=json.load(file)
 
 #creating a title for the app
