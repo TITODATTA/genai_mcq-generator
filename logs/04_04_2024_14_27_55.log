@@ -1,0 +1,2 @@
+[2024-04-04 14:28:30,016] 1015 openai._base_client - INFO - Retrying request to /chat/completions in 0.842618 seconds
+[2024-04-04 14:28:30,885] 1015 openai._base_client - INFO - Retrying request to /chat/completions in 1.941688 seconds
